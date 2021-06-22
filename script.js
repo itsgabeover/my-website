@@ -1,4 +1,16 @@
-const h2 = document.createElement('h2');
-h2.textContent = "This content added by JavaScript"; 
+function changeImage() {
 
-document.querySelector('body').appendChild(h2); 
+    if (document.getElementById("imgClickAndChange").src === "./images/beachPhoto.jpg") 
+    {
+        document.getElementById("imgClickAndChange").src = "./images/shpeRocket.jpg";
+    }
+    /*else if (document.getElementById("imgClickAndChange").src === "./images/shpeRocket.jpg")
+    {
+        document.getElementById("imgClickAndChange").src = "./images/mountainPhoto.jpg";
+    }
+    else if (document.getElementById("imgClickAndChange").src === "./images/mountainPhoto.jpg")
+    {
+        document.getElementById("imgClickAndChange").src = "./images/beachPhoto.jpg"
+    }*/
+}
+changeImage();
